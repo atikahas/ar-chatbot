@@ -48,47 +48,104 @@
  *     }
  * }
  */
+
 const chat = {
     1: {
-        text: 'Hi! Welcome to Peekobot.',
-        options: [
-            {
-                text: '👋',
-                next: 2
-            }
-        ]
+        text: 'Hi! Welcome to Aman Rimba.',
+        next: 2
     },
+
     2: {
-        text: 'Peekobot is a <em>really simple</em>, choice-driven chatbot framework made in <del>less than</del> just over 100 lines of vanilla JavaScript',
-        next: 3
-    },
-    3: {
-        text: 'But you probably knew that anyway.',
+        text: 'What brings you here today?',
         options: [
             {
-                text: "<strong>Yes</strong>, I did!",
-                next: 4
+                text: "I want to know more about Aman Rimba Private Estate.",
+                next: 3
             },
             {
-                text: "<strong>Nope</strong>, this is news.",
-                next: 5
+                text: "I have a question.",
+                next: 4
             }
         ]
     },
-    4: {
-        text: 'Awesome. This chat is still in development. Happy coding!',
-    },
-    5: {
-        text: 'Aah, you\'re missing out!',
-        next: 6
-    },
-    6: {
-        text: 'You should check it out on GitHub',
+
+    3: {
+        text: 'What do you want to know about Aman Rimba Private Estate?',
         options: [
             {
-                text: "Go to GitHub",
-                url: "https://github.com/peekobot/peekobot"
+                text: "What is the rate?",
+                next: 5
+            },
+            {
+                text: "Is there any package available?",
+                next: 7
+            },
+            {
+                text: "What are the facilities provided?",
+                next: 8
+            },
+            {
+                text: "Aman Rimba suitable for?",
+                next: 9
             }
         ]
+    },
+
+    4: {
+        text: 'What is your question?',
+        options: [
+            {
+                text: "How do you ensure your guest safety?",
+                next: 10
+            },
+            {
+                text: "Am I allowed to book villa individually?",
+                next: 11
+            },
+            {
+                text: "Is there any other option for food?",
+                next: 12
+            },
+            {
+                text: "What is maximum guests capacity?",
+                next: 13
+            },
+            {
+                text: "Am i allowed to make an event there?",
+                next: 14
+            }
+        ]
+    },
+
+    5: {
+        text: 'Starting rates for 2 days 1 night is RMxxxx. The actual rate and total cost will be shown in our Quotation which may include additional request from customer.',
+        options: [
+            {
+                text: "Okay, thank you.",
+                next: 21
+            },
+            {
+                text: "I want to know more.",
+                next: 3
+            },
+            {
+                text: "I need your further assistance.",
+                next: 20
+            }
+        ]
+    },
+
+    20: {
+        text: 'Please contact us for further information. Business hours: 9:00 AM - 6:00 PM',
+        options: [
+            {
+                text: "WhatsApp (Pn Sall)",
+                url: "https://wa.me/60105662757"
+            }
+        ]
+    },
+
+    21: {
+        text: "You're welcome"
     }
 };
